@@ -10,6 +10,5 @@
 
     <item
         android:id="@+id/opciones"
-        android:title="Opciones"
-        />
+        android:title="settings" />
 </menu>

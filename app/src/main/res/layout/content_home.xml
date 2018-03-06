@@ -139,17 +139,28 @@
         android:layout_marginTop="420dp">
 
         <android.support.v4.widget.SwipeRefreshLayout
-            android:id="@+id/srl_tablon_refrescar"
+            android:id="@+id/swRleLay"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/tv_clicLargo_tablon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Fin de semana intenso el que nos ha dejado la IEM XII de Katowice 2018. Otro año más, el gran evento polaco acogía el torneo más importante de CS:GO, con una final a la altura tras una semana entera de pura emoción. Los eSports ya habían calentado motores en el Spodek Arena con Dota 2 y PUBG, pero el plato fuerte es, y será en este escenario, Counter-Strike. Con 524.000 dólares en premios, los 16 equipos clasificados han dado todo, ofreciendo un gran espectáculo, pero finalmente ha sido Fnatic el que se ha alzado vencedor frente a FaZe Clan."
-                android:textSize="18sp" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_clicLargo_tablon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fin de semana intenso el que nos ha dejado la IEM XII de Katowice 2018. Otro año más, el gran evento polaco acogía el torneo más importante de CS:GO, con una final a la altura tras una semana entera de pura emoción. Los eSports ya habían calentado motores en el Spodek Arena con Dota 2 y PUBG, pero el plato fuerte es, y será en este escenario, Counter-Strike. Con 524.000 dólares en premios, los 16 equipos clasificados han dado todo, ofreciendo un gran espectáculo, pero finalmente ha sido Fnatic el que se ha alzado vencedor frente a FaZe Clan."
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </ScrollView>
 
         </android.support.v4.widget.SwipeRefreshLayout>
 
